@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Highdee Technologies — Transforming Ideas into Intelligent Solutions</title>
+    <meta name="description" content="Highdee Technologies empowers individuals, schools, and businesses with innovative technology solutions in Nigeria and Africa." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <!-- ===== EXTERNAL CSS ===== -->
+    <link rel="stylesheet" href="style.css" />
+    
+    <!-- ===== SUPABASE JS SDK ===== -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <!-- ===== NAV OVERLAY ===== -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ============================================
+    HEADER / NAVIGATION
+    ============================================ -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+            <a href="#" class="logo" data-page="home">
+                <img src="C:\Users\PC\Desktop\MY WEBSITE\images\Highdee_logo.jpg" alt="Highdee Technologies Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+                <div class="logo-text" style="display:none;">
+                    <span class="brand">Highdee<span>Tech</span></span>
+                    <span class="tagline">Transforming Ideas into Intelligent Solutions</span>
+                </div>
+            </a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#" data-page="home" class="active">Home</a></li>
+                    <li><a href="#" data-page="about">About</a></li>
+                    <li><a href="#" data-page="solutions">Solutions</a></li>
+                    <li><a href="#" data-page="services">Services</a></li>
+                    <li><a href="#" data-page="projects">Projects</a></li>
+                    <li><a href="#" data-page="initiatives">Initiatives</a></li>
+                    <li><a href="#" data-page="insights">Insights</a></li>
+                    <li><a href="#" data-page="contact">Contact</a></li>
+                    <li><a href="#" data-page="contact" class="btn btn-primary btn-sm">Start a Project</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ============================================
+    EXTRA TOP CONTENT (Preserved from original)
+    ============================================ -->
+    <div>
+        <p>Transforming Ideas into Intelligent Solutions</p>
+        <p>Empowers individuals, schools, and businesses</p>
+    </div>
+
+    <div class="images_column">
+        <div>
+            <img src="C:\Users\PC\Desktop\MY WEBSITE\images\Highdee_header_logo.jpg" alt="Highdee Technologies Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        </div>
+    </div>
+
+    <!-- ============================================
+    MAIN CONTENT - ALL PAGES
+    ============================================ -->
+    <section>
+
+        <!-- ==========================================
+        PAGE: HOME
+        ========================================== -->
+        <main class="page active" id="page-home">
+
+            <!-- ===== HERO SECTION ===== -->
+            <section class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-tech">Technology</div>
+                        <h1>Highdee <span class="highlight">Technologies</span></h1>
+                        <div class="hero-sub">Transforming Ideas into Intelligent Solutions</div>
+                        <p>Highdee Technologies empowers individuals, schools, and businesses with innovative technology solutions. We specialize in educational technology, software development, website design, mobile apps, Excel automation, and ICT training.</p>
+                        <div class="hero-buttons">
+                            <a href="#" data-page="solutions" class="btn btn-primary">Explore Our Solutions <i class="fas fa-arrow-right"></i></a>
+                            <a href="#" data-page="contact" class="btn btn-white">Start a Project</a>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="hero-visual-inner">
+                            <div class="visual-header">
+                                <div class="dots"><span></span><span></span><span></span></div>
+                                <span class="badge">Intelligent Systems</span>
+                            </div>
+                            <div class="visual-chart">
+                                <div class="bar-wrap"><span class="bar-label">EdTech</span><div class="bar"><div class="fill" style="width:78%"></div></div></div>
+                                <div class="bar-wrap"><span class="bar-label">CBT</span><div class="bar"><div class="fill" style="width:62%"></div></div></div>
+                                <div class="bar-wrap"><span class="bar-label">School Mgmt</span><div class="bar"><div class="fill" style="width:91%"></div></div></div>
+                                <div class="bar-wrap"><span class="bar-label">Automation</span><div class="bar"><div class="fill" style="width:45%"></div></div></div>
+                                <div class="bar-wrap"><span class="bar-label">Digital Admin</span><div class="bar"><div class="fill" style="width:83%"></div></div></div>
+                                <div class="bar-wrap"><span class="bar-label">Custom Dev</span><div class="bar"><div class="fill" style="width:57%"></div></div></div>
+                            </div>
+                            <div class="visual-row"><span class="label">Active Solutions</span><span class="value">12+</span><span class="pill">Live</span></div>
+                            <div class="visual-row"><span class="label">Satisfied Organizations</span><span class="value">24+</span><span class="pill">Growing</span></div>
+                            <div class="visual-row"><span class="label">Students Trained</span><span class="value">2,000+</span><span class="pill">HDGI</span></div>
+                        </div>
+                        <div class="float-card" style="top:10%;right:-8%;"><i class="fas fa-graduation-cap"></i> Education Tech</div>
+                        <div class="float-card" style="bottom:20%;left:-8%;"><i class="fas fa-code"></i> Custom Software</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== TRUST BAR ===== -->
+            <section class="trust-bar">
+                <div class="container">
+                    <p><strong>Technology Built Around Real Problems.</strong> Highdee Technologies focuses on building useful technology rather than technology for its own sake — practical, people-centered, and built to last.</p>
+                </div>
+            </section>
+
+            <!-- ===== ABOUT PREVIEW ===== -->
+            <section class="about-preview section-padding">
+                <div class="container about-grid">
+                    <div class="content reveal">
+                        <span class="section-label">About Us</span>
+                        <h2 class="section-title">Who We <span class="highlight">Are</span></h2>
+                        <p>Highdee Technologies empowers individuals, schools, and businesses with innovative technology solutions. We specialize in educational technology, software development, website design, mobile apps, Excel automation, and ICT training.</p>
+                        <p>From custom software and school management systems to technical support and consultancy, we transform ideas into practical technology solutions that create lasting impact.</p>
+                        <a href="#" data-page="about" class="btn btn-primary">Learn More About Highdee Technologies <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="image-placeholder reveal reveal-delay-1">
+                        <div class="row"><i class="fas fa-laptop-code"></i><span>Software Development</span></div>
+                        <div class="row"><i class="fas fa-school"></i><span>Education Technology</span></div>
+                        <div class="row"><i class="fas fa-database"></i><span>Digital Administration</span></div>
+                        <div class="row"><i class="fas fa-robot"></i><span>Intelligent Solutions</span></div>
+                        <div class="row"><i class="fas fa-chart-line"></i><span>Digital Transformation</span></div>
+                        <div class="row"><i class="fas fa-mobile-alt"></i><span>Mobile Apps &amp; Automation</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== CEO SECTION ===== -->
+            <section class="ceo-section section-padding">
+                <div class="container ceo-grid">
+                    <div class="ceo-image reveal">
+                        <img src="C:\Users\PC\Desktop\MY WEBSITE\images\Agoro.jpg" alt="Agoro I.O. - CEO of Highdee Technologies" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+                        <div class="placeholder" style="display:none;">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Agoro I.O.</span>
+                        </div>
+                    </div>
+                    <div class="ceo-content reveal reveal-delay-1">
+                        <span class="section-label">Leadership</span>
+                        <h2>Agoro I.O.</h2>
+                        <div class="ceo-title">CEO — Highdee Technologies (Bsc, DISM, PGDE, MICT)</div>
+                        <p>Agoro Idowu Olamipo is an ICT professional, educator, and technology enthusiast committed to driving digital transformation in education. As CEO of Highdee Technologies, he leads the development of innovative software solutions that simplify learning, assessment, and school management.</p>
+                        <div class="ceo-quote">
+                            “We believe technology should simplify work, enhance learning, and create new opportunities. That's why we provide complete ICT services — from system development and automation to technical support, consultancy, and capacity-building programs.”
+                        </div>
+                        <a href="#" data-page="about" class="btn btn-navy">Learn More About Our Team <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== SOLUTIONS ===== -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="text-center reveal">
+                        <span class="section-label">What We Build</span>
+                        <h2 class="section-title">Our Technology <span class="highlight">Solutions</span></h2>
+                        <p class="section-sub mx-auto">Highdee Technologies develops technology products and systems that solve real problems for organizations, schools, and businesses.</p>
+                    </div>
+                    <div class="solutions-grid">
+                        <div class="solution-card reveal reveal-delay-1"><div class="icon"><i class="fas fa-graduation-cap"></i></div><h4>Education Technology</h4><p>Digital tools that improve teaching, assessment, administration and learning.</p></div>
+                        <div class="solution-card reveal reveal-delay-2"><div class="icon"><i class="fas fa-desktop"></i></div><h4>CBT &amp; Assessment Systems</h4><p>Computer-based testing platforms for schools, training organizations and examination environments.</p></div>
+                        <div class="solution-card reveal reveal-delay-3"><div class="icon"><i class="fas fa-building-columns"></i></div><h4>School Management Solutions</h4><p>Digital systems for managing operations, records, results, registration and administration.</p></div>
+                        <div class="solution-card reveal reveal-delay-1"><div class="icon"><i class="fas fa-gears"></i></div><h4>Business Automation</h4><p>Solutions that replace repetitive manual processes with efficient digital workflows.</p></div>
+                        <div class="solution-card reveal reveal-delay-2"><div class="icon"><i class="fas fa-folder-open"></i></div><h4>Digital Administration</h4><p>Systems that help institutions manage information, records, reporting and operations.</p></div>
+                        <div class="solution-card reveal reveal-delay-3"><div class="icon"><i class="fas fa-code"></i></div><h4>Custom Software Solutions</h4><p>Purpose-built applications designed around specific organizational needs.</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== VISION MISSION ===== -->
+            <section class="section-padding" style="background:var(--gray-100)">
+                <div class="container">
+                    <div class="text-center reveal">
+                        <span class="section-label">Our Compass</span>
+                        <h2 class="section-title">Vision &amp; <span class="highlight">Mission</span></h2>
+                    </div>
+                    <div class="vm-grid">
+                        <div class="vm-card reveal reveal-delay-1"><div class="icon"><i class="fas fa-eye"></i></div><h3>Vision</h3><p>To empower individuals, schools, and businesses through innovative technology solutions that create lasting impact and drive growth across Africa and beyond.</p></div>
+                        <div class="vm-card reveal reveal-delay-2"><div class="icon"><i class="fas fa-bullseye"></i></div><h3>Mission</h3><p>To deliver reliable, user-friendly digital solutions that simplify work, enhance learning, and drive growth — from custom software and school management systems to technical support and consultancy.</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== VALUES ===== -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="text-center reveal">
+                        <span class="section-label">What We Stand For</span>
+                        <h2 class="section-title">Our Core <span class="highlight">Values</span></h2>
+                    </div>
+                    <div class="values-grid">
+                        <div class="value-card reveal reveal-delay-1"><div class="icon"><i class="fas fa-lightbulb"></i></div><h4>Innovation</h4><p>We continuously seek better ways to solve problems through technology.</p></div>
+                        <div class="value-card reveal reveal-delay-2"><div class="icon"><i class="fas fa-handshake"></i></div><h4>Integrity</h4><p>We build relationships and solutions around honesty, responsibility and trust.</p></div>
+                        <div class="value-card reveal reveal-delay-3"><div class="icon"><i class="fas fa-star"></i></div><h4>Excellence</h4><p>We strive for quality in the products and services we deliver.</p></div>
+                        <div class="value-card reveal reveal-delay-1"><div class="icon"><i class="fas fa-bolt"></i></div><h4>Impact</h4><p>Technology should create measurable value and solve meaningful problems.</p></div>
+                        <div class="value-card reveal reveal-delay-2"><div class="icon"><i class="fas fa-graduation-cap"></i></div><h4>Continuous Learning</h4><p>We believe technology evolves continuously, and so should we.</p></div>
+                        <div class="value-card reveal reveal-delay-3"><div class="icon"><i class="fas fa-users"></i></div><h4>People-Centered Technology</h4><p>We design solutions around the people who actually use them.</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== EDTECH ===== -->
+            <section class="edtech section-padding">
+                <div class="container edtech-grid">
+                    <div class="content reveal">
+                        <span class="section-label">Education Focus</span>
+                        <h2 class="section-title">Technology for <span class="highlight">Better Education</span></h2>
+                        <p>Technology can help schools improve administration, digitize records, conduct CBT examinations, manage results, improve assessment, reduce paperwork, improve access to information, support teachers, and give students better digital experiences.</p>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Improve Administration</li>
+                            <li><i class="fas fa-check-circle"></i> Digitize Records</li>
+                            <li><i class="fas fa-check-circle"></i> CBT Examinations</li>
+                            <li><i class="fas fa-check-circle"></i> Manage Results</li>
+                            <li><i class="fas fa-check-circle"></i> Reduce Paperwork</li>
+                            <li><i class="fas fa-check-circle"></i> Support Teachers</li>
+                        </ul>
+                    </div>
+                    <div class="edtech-visual reveal reveal-delay-1">
+                        <div class="row"><span>📚 Digital Assessment</span><span style="color:var(--navy-600);font-weight:600">Live</span></div>
+                        <div class="row"><span>📊 Result Management</span><span style="color:var(--navy-600);font-weight:600">Active</span></div>
+                        <div class="row"><span>🏫 School Operations</span><span style="color:var(--navy-600);font-weight:600">Deployed</span></div>
+                        <div class="row"><span>📝 CBT Platform</span><span style="color:var(--navy-600);font-weight:600">Available</span></div>
+                        <div class="row"><span>📁 Digital Records</span><span style="color:var(--navy-600);font-weight:600">In Use</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== HDGI ===== -->
+            <section class="hdgi section-padding">
+                <div class="container hdgi-grid">
+                    <div class="content reveal">
+                        <span class="section-label">Initiative</span>
+                        <h2 class="section-title">Highdee Digital Girls <span class="highlight">Initiative</span></h2>
+                        <p style="font-size:1.05rem;font-weight:500;color:var(--purple-300)">“Building brighter futures through digital skills for girls.”</p>
+                        <p>HDGI focuses on helping girls develop digital skills and prepare for opportunities in the technology-driven future through digital literacy, web design, technology education, coding, digital creativity, STEM exposure, and empowerment through technology.</p>
+                        <div style="margin:12px 0 8px;">
+                            <span class="stat-highlight">2,000+</span>
+                            <span class="stat-text">students trained in data analysis and web design</span>
+                        </div>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Digital Literacy</li>
+                            <li><i class="fas fa-check-circle"></i> Coding &amp; Web Design</li>
+                            <li><i class="fas fa-check-circle"></i> STEM Exposure</li>
+                            <li><i class="fas fa-check-circle"></i> Technology Education</li>
+                            <li><i class="fas fa-check-circle"></i> Digital Creativity</li>
+                            <li><i class="fas fa-check-circle"></i> Empowerment</li>
+                        </ul>
+                        <a href="#" data-page="initiatives" class="btn btn-white" style="margin-top:12px;">Learn About HDGI <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="hdgi-visual reveal reveal-delay-1">
+                        <div class="big-number">
+                            <div class="number">2,000+</div>
+                            <div class="label">Students Trained in Data Analysis &amp; Web Design</div>
+                        </div>
+                        <div class="stat"><i class="fas fa-graduation-cap"></i><span>Digital skills training for girls</span></div>
+                        <div class="stat"><i class="fas fa-laptop-code"></i><span>Web design &amp; coding workshops</span></div>
+                        <div class="stat"><i class="fas fa-users"></i><span>Building future tech leaders</span></div>
+                        <div class="stat"><i class="fas fa-rocket"></i><span>Preparing for tomorrow's opportunities</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== INNOVATION ===== -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="text-center reveal">
+                        <span class="section-label">Future Focus</span>
+                        <h2 class="section-title">Innovation &amp; <span class="highlight">Emerging Technology</span></h2>
+                        <p class="section-sub mx-auto">Highdee Technologies explores practical innovation in areas that create real value for organizations and communities.</p>
+                    </div>
+                    <div class="innovation-grid">
+                        <div class="innovation-item reveal reveal-delay-1"><div class="icon">🧠</div><h4>Artificial Intelligence</h4><p>Practical AI applications for real problems</p></div>
+                        <div class="innovation-item reveal reveal-delay-2"><div class="icon">📚</div><h4>Education Technology</h4><p>Smarter tools for learning and teaching</p></div>
+                        <div class="innovation-item reveal reveal-delay-3"><div class="icon">⚡</div><h4>Automation</h4><p>Efficient digital workflows</p></div>
+                        <div class="innovation-item reveal reveal-delay-4"><div class="icon">☁️</div><h4>Cloud Technology</h4><p>Scalable, accessible solutions</p></div>
+                        <div class="innovation-item reveal reveal-delay-1"><div class="icon">📊</div><h4>Data-Driven Solutions</h4><p>Insights from information</p></div>
+                        <div class="innovation-item reveal reveal-delay-2"><div class="icon">🏫</div><h4>Smart School Systems</h4><p>Intelligent education administration</p></div>
+                        <div class="innovation-item reveal reveal-delay-3"><div class="icon">💼</div><h4>Intelligent Business Systems</h4><p>Smarter organizational tools</p></div>
+                        <div class="innovation-item reveal reveal-delay-4"><div class="icon">🌍</div><h4>Digital Transformation</h4><p>Future-ready organizations</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== PROCESS ===== -->
+            <section class="process section-padding">
+                <div class="container">
+                    <div class="text-center reveal">
+                        <span class="section-label">How We Work</span>
+                        <h2 class="section-title">Our Development <span class="highlight">Process</span></h2>
+                    </div>
+                    <div class="process-grid">
+                        <div class="process-step reveal reveal-delay-1"><div class="num">01</div><h4>Understand</h4><p>We understand the problem, users, requirements and desired outcome.</p></div>
+                        <div class="process-step reveal reveal-delay-2"><div class="num">02</div><h4>Plan</h4><p>We define the solution architecture, features and implementation strategy.</p></div>
+                        <div class="process-step reveal reveal-delay-3"><div class="num">03</div><h4>Design</h4><p>We create an intuitive user experience and professional interface.</p></div>
+                        <div class="process-step reveal reveal-delay-1"><div class="num">04</div><h4>Build</h4><p>We develop, test and refine the technology solution.</p></div>
+                        <div class="process-step reveal reveal-delay-2"><div class="num">05</div><h4>Launch</h4><p>We deploy the solution and ensure it is ready for real-world use.</p></div>
+                        <div class="process-step reveal reveal-delay-3"><div class="num">06</div><h4>Improve</h4><p>We continuously improve based on feedback and changing needs.</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== WHY CHOOSE ===== -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="text-center reveal">
+                        <span class="section-label">Why Us</span>
+                        <h2 class="section-title">Why Choose <span class="highlight">Highdee Technologies</span></h2>
+                    </div>
+                    <div class="why-grid">
+                        <div class="why-item reveal reveal-delay-1"><div class="icon"><i class="fas fa-check-circle"></i></div><h4>Practical Solutions</h4><p>We focus on solving real problems, not just building technology for its own sake.</p></div>
+                        <div class="why-item reveal reveal-delay-2"><div class="icon"><i class="fas fa-user-check"></i></div><h4>User-Centered Design</h4><p>Solutions are designed around the people who use them.</p></div>
+                        <div class="why-item reveal reveal-delay-3"><div class="icon"><i class="fas fa-arrow-trend-up"></i></div><h4>Scalable Thinking</h4><p>We build with future growth and changing requirements in mind.</p></div>
+                        <div class="why-item reveal reveal-delay-1"><div class="icon"><i class="fas fa-school"></i></div><h4>Education &amp; Institutional Experience</h4><p>We understand the unique challenges faced by educational institutions and organizations.</p></div>
+                        <div class="why-item reveal reveal-delay-2"><div class="icon"><i class="fas fa-rocket"></i></div><h4>Innovation with Purpose</h4><p>We use technology where it creates meaningful value.</p></div>
+                        <div class="why-item reveal reveal-delay-3"><div class="icon"><i class="fas fa-handshake"></i></div><h4>Long-Term Partnership</h4><p>We aim to build lasting relationships rather than simply deliver one-off projects.</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== TECH STACK ===== -->
+            <section class="tech-stack section-padding-sm">
+                <div class="container text-center">
+                    <div class="reveal">
+                        <span class="section-label">Technologies</span>
+                        <h2 class="section-title" style="font-size:1.6rem;">Our Technology <span class="highlight">Stack</span></h2>
+                    </div>
+                    <div class="tech-grid reveal">
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">TypeScript</span>
+                        <span class="badge">.NET</span>
+                        <span class="badge">VB.NET</span>
+                        <span class="badge">SQL</span>
+                        <span class="badge">PostgreSQL</span>
+                        <span class="badge">Supabase</span>
+                        <span class="badge">Google Apps Script</span>
+                        <span class="badge">GitHub</span>
+                        <span class="badge">Vercel</span>
+                        <span class="badge">Cloud Technologies</span>
+                        <span class="badge">Database Systems</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== INSIGHTS ===== -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="text-center reveal">
+                        <span class="section-label">Latest Thinking</span>
+                        <h2 class="section-title">Insights &amp; <span class="highlight">Articles</span></h2>
+                    </div>
+                    <div class="insights-grid">
+                        <div class="insight-card reveal reveal-delay-1"><div class="thumb"><i class="fas fa-graduation-cap"></i></div><div class="body"><span class="cat">Education Technology</span><h4>Digitizing School Administration in Nigeria</h4><p>How technology is helping schools move from paper-based to digital operations.</p></div></div>
+                        <div class="insight-card reveal reveal-delay-2"><div class="thumb"><i class="fas fa-robot"></i></div><div class="body"><span class="cat">AI &amp; Emerging Tech</span><h4>Practical AI for African Organizations</h4><p>Exploring how artificial intelligence can solve real problems in the African context.</p></div></div>
+                        <div class="insight-card reveal reveal-delay-3"><div class="thumb"><i class="fas fa-laptop-code"></i></div><div class="body"><span class="cat">Software Development</span><h4>Building Scalable Digital Solutions</h4><p>Best practices for developing technology that grows with your organization.</p></div></div>
+                    </div>
+                    <div class="text-center" style="margin-top:32px;">
+                        <a href="#" data-page="insights" class="btn btn-outline">View All Insights <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== CTA ===== -->
+            <section class="cta-section">
+                <div class="container">
+                    <h2>Have an Idea? Let's Transform It Into a Solution.</h2>
+                    <p>Whether you need a digital platform, software solution, school technology system or a custom technology project, let's discuss how technology can help you achieve your goals.</p>
+                    <a href="#" data-page="contact" class="btn btn-white">Start a Conversation <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </section>
+
+            <!-- ===== CONTACT ===== -->
+            <section class="section-padding" id="contact-home">
+                <div class="container">
+                    <div class="text-center reveal">
+                        <span class="section-label">Get in Touch</span>
+                        <h2 class="section-title">Let's <span class="highlight">Connect</span></h2>
+                        <p class="section-sub mx-auto">Reach out to us to discuss your project, ask questions, or learn more about how we can help.</p>
+                    </div>
+                    <div class="contact-grid">
+                        <div class="contact-form reveal">
+                            <form id="contactForm">
+                                <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your full name" required /></div>
+                                <div class="form-group"><label>Organization</label><input type="text" placeholder="Your organization name" /></div>
+                                <div class="form-group"><label>Email Address</label><input type="email" placeholder="you@example.com" required /></div>
+                                <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+234 800 000 0000" /></div>
+                                <div class="form-group"><label>Service Needed</label><select><option value="">Select a service</option><option>Software Development</option><option>Web Development</option><option>Education Technology</option><option>Business Automation</option><option>Technology Consulting</option><option>Digital Transformation</option><option>Other</option></select></div>
+                                <div class="form-group"><label>Project Type</label><select><option value="">Select project type</option><option>New Project</option><option>Upgrade Existing System</option><option>Consulting</option><option>Partnership</option><option>Other</option></select></div>
+                                <div class="form-group"><label>Budget Range</label><select><option value="">Select range</option><option>Under ₦1M</option><option>₦1M – ₦5M</option><option>₦5M – ₦10M</option><option>₦10M – ₦20M</option><option>Above ₦20M</option></select></div>
+                                <div class="form-group"><label>Message</label><textarea placeholder="Tell us about your project, goals, or questions..."></textarea></div>
+                                <button type="submit" class="btn btn-primary">Send Inquiry <i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                        <div class="contact-info reveal reveal-delay-1">
+                            <div class="item"><i class="fas fa-envelope"></i><div><div class="label">Email</div><div class="value">highdeetech1@gmail.com</div></div></div>
+                            <div class="item"><i class="fas fa-phone"></i><div><div class="label">Phone</div><div class="value">+234 705 115 0166</div></div></div>
+                            <div class="item"><i class="fas fa-location-dot"></i><div><div class="label">Office</div><div class="value">Nigeria</div></div></div>
+                            <div class="item"><i class="fab fa-whatsapp"></i><div><div class="label">WhatsApp</div><div class="value">+234 705 115 0166</div></div></div>
+                            <div class="contact-social">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <!-- ===== END PAGE: HOME ===== -->
+
+
+        <!-- ==========================================
+        PAGE: ABOUT
+        ========================================== -->
+        <div class="page" id="page-about">
+            <div class="page-hero">
+                <div class="container">
+                    <h1>About Highdee Technologies</h1>
+                    <p>Building intelligent digital solutions that transform ideas into reality.</p>
+                </div>
+            </div>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="about-grid" style="gap:50px;">
+                        <div>
+                            <span class="section-label">Who We Are</span>
+                            <h2 class="section-title">A Technology &amp; Innovation <span class="highlight">Company</span></h2>
+                            <p style="color:var(--gray-600);line-height:1.8;margin-top:12px;">Highdee Technologies empowers individuals, schools, and businesses with innovative technology solutions. We specialize in educational technology, software development, website design, mobile apps, Excel automation, and ICT training.</p>
+                            <p style="color:var(--gray-600);line-height:1.8;margin-top:12px;">Our mission is to deliver reliable, user-friendly digital solutions that simplify work, enhance learning, and drive growth. From custom software and school management systems to technical support and consultancy, we transform ideas into practical technology solutions that create lasting impact.</p>
+                            <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;">
+                                <span style="background:var(--navy-100);color:var(--navy-700);padding:4px 16px;border-radius:100px;font-size:0.8rem;font-weight:500;">Software Development</span>
+                                <span style="background:var(--navy-100);color:var(--navy-700);padding:4px 16px;border-radius:100px;font-size:0.8rem;font-weight:500;">Education Technology</span>
+                                <span style="background:var(--navy-100);color:var(--navy-700);padding:4px 16px;border-radius:100px;font-size:0.8rem;font-weight:500;">Digital Transformation</span>
+                                <span style="background:var(--navy-100);color:var(--navy-700);padding:4px 16px;border-radius:100px;font-size:0.8rem;font-weight:500;">CBT Systems</span>
+                                <span style="background:var(--navy-100);color:var(--navy-700);padding:4px 16px;border-radius:100px;font-size:0.8rem;font-weight:500;">School Management</span>
+                                <span style="background:var(--navy-100);color:var(--navy-700);padding:4px 16px;border-radius:100px;font-size:0.8rem;font-weight:500;">Mobile Apps</span>
+                            </div>
+                        </div>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
+                            <div style="background:var(--navy-100);border-radius:var(--radius-md);padding:24px;text-align:center;"><div style="font-size:2.4rem;font-weight:800;color:var(--navy-700);">12+</div><div style="color:var(--gray-600);font-size:0.9rem;">Solutions Developed</div></div>
+                            <div style="background:var(--navy-100);border-radius:var(--radius-md);padding:24px;text-align:center;"><div style="font-size:2.4rem;font-weight:800;color:var(--navy-700);">24+</div><div style="color:var(--gray-600);font-size:0.9rem;">Organizations Served</div></div>
+                            <div style="background:var(--navy-100);border-radius:var(--radius-md);padding:24px;text-align:center;"><div style="font-size:2.4rem;font-weight:800;color:var(--navy-700);">6</div><div style="color:var(--gray-600);font-size:0.9rem;">Core Values</div></div>
+                            <div style="background:var(--navy-100);border-radius:var(--radius-md);padding:24px;text-align:center;"><div style="font-size:2.4rem;font-weight:800;color:var(--navy-700);">2K+</div><div style="color:var(--gray-600);font-size:0.9rem;">Students Trained</div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section style="background:var(--gray-100);padding:60px 0;">
+                <div class="container">
+                    <div class="vm-grid">
+                        <div class="vm-card"><div class="icon"><i class="fas fa-eye"></i></div><h3>Vision</h3><p>To empower individuals, schools, and businesses through innovative technology solutions that create lasting impact and drive growth across Africa and beyond.</p></div>
+                        <div class="vm-card"><div class="icon"><i class="fas fa-bullseye"></i></div><h3>Mission</h3><p>To deliver reliable, user-friendly digital solutions that simplify work, enhance learning, and drive growth — from custom software and school management systems to technical support and consultancy.</p></div>
+                    </div>
+                </div>
+            </section>
+            <!-- CEO on About page -->
+            <section class="ceo-section section-padding">
+                <div class="container ceo-grid">
+                    <div class="ceo-image">
+                        <img src="C:\Users\PC\Desktop\MY WEBSITE\images\Agoro.jpg" alt="Agoro I.O. - CEO of Highdee Technologies" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+                        <div class="placeholder" style="display:none;">
+                            <i class="fas fa-user-circle"></i>
+                            <span>Agoro I.O.</span>
+                        </div>
+                    </div>
+                    <div class="ceo-content">
+                        <span class="section-label">Leadership</span>
+                        <h2>Agoro I.O.</h2>
+                        <div class="ceo-title">CEO — Highdee Technologies (Bsc, DISM, PGDE, MICT)</div>
+                        <p>Agoro Idowu Olamipo is an ICT professional, educator, and technology enthusiast committed to driving digital transformation in education. As CEO of Highdee Technologies, he leads the development of innovative software solutions that simplify learning, assessment, and school management.</p>
+                        <div class="ceo-quote">
+                            “We believe technology should simplify work, enhance learning, and create new opportunities. That's why we provide complete ICT services — from system development and automation to technical support, consultancy, and capacity-building programs.”
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- ==========================================
+        PAGE: SOLUTIONS
+        ========================================== -->
+        <div class="page" id="page-solutions">
+            <div class="page-hero">
+                <div class="container">
+                    <h1>Our Technology Solutions</h1>
+                    <p>Practical digital products and systems designed to solve real organizational challenges.</p>
+                </div>
+            </div>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="solutions-grid" style="grid-template-columns:repeat(3,1fr);">
+                        <div class="solution-card"><div class="icon"><i class="fas fa-graduation-cap"></i></div><h4>Education Technology</h4><p>Digital tools that improve teaching, assessment, administration and learning outcomes.</p></div>
+                        <div class="solution-card"><div class="icon"><i class="fas fa-desktop"></i></div><h4>CBT &amp; Assessment Systems</h4><p>Computer-based testing platforms designed for schools, training organizations and examination environments.</p></div>
+                        <div class="solution-card"><div class="icon"><i class="fas fa-building-columns"></i></div><h4>School Management Solutions</h4><p>Digital systems for managing school operations, records, results, registration and administration.</p></div>
+                        <div class="solution-card"><div class="icon"><i class="fas fa-gears"></i></div><h4>Business Automation</h4><p>Solutions that replace repetitive manual processes with efficient digital workflows.</p></div>
+                        <div class="solution-card"><div class="icon"><i class="fas fa-folder-open"></i></div><h4>Digital Administration</h4><p>Systems that help institutions manage information, records, reporting and operations more effectively.</p></div>
+                        <div class="solution-card"><div class="icon"><i class="fas fa-code"></i></div><h4>Custom Software Solutions</h4><p>Purpose-built applications designed around specific organizational needs and requirements.</p></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- ==========================================
+        PAGE: SERVICES
+        ========================================== -->
+        <div class="page" id="page-services">
+            <div class="page-hero">
+                <div class="container">
+                    <h1>Our Services</h1>
+                    <p>Professional technology services delivered with expertise and a focus on real results.</p>
+                </div>
+            </div>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="services-grid" style="grid-template-columns:repeat(3,1fr);">
+                        <div class="service-card"><div class="icon"><i class="fas fa-code"></i></div><h4>Software Development</h4><p>Custom software and web applications designed around specific business and institutional requirements.</p></div>
+                        <div class="service-card"><div class="icon"><i class="fas fa-globe"></i></div><h4>Web Development</h4><p>Professional responsive websites and web-based platforms built to modern standards.</p></div>
+                        <div class="service-card"><div class="icon"><i class="fas fa-graduation-cap"></i></div><h4>Education Technology Development</h4><p>Technology solutions for schools, teachers, students and educational institutions.</p></div>
+                        <div class="service-card"><div class="icon"><i class="fas fa-robot"></i></div><h4>Business Process Automation</h4><p>Digitizing repetitive processes and improving operational efficiency through technology.</p></div>
+                        <div class="service-card"><div class="icon"><i class="fas fa-database"></i></div><h4>Database &amp; Information Systems</h4><p>Designing reliable systems for storing, managing and retrieving organizational information.</p></div>
+                        <div class="service-card"><div class="icon"><i class="fas fa-chart-line"></i></div><h4>Technology Consulting</h4><p>Helping organizations identify practical opportunities to use technology effectively.</p></div>
+                        <div class="service-card"><div class="icon"><i class="fas fa-rocket"></i></div><h4>Digital Transformation</h4><p>Helping institutions move from manual processes toward efficient digital systems.</p></div>
+                        <div class="service-card"><div class="icon"><i class="fas fa-mobile-alt"></i></div><h4>Mobile App Development</h4><p>Building mobile applications that solve problems and engage users effectively.</p></div>
+                        <div class="service-card"><div class="icon"><i class="fas fa-file-excel"></i></div><h4>Excel Automation</h4><p>Transforming manual spreadsheet tasks into efficient automated workflows.</p></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- ==========================================
+        PAGE: PROJECTS
+        ========================================== -->
+        <div class="page" id="page-projects">
+            <div class="page-hero">
+                <div class="container">
+                    <h1>Featured Solutions</h1>
+                    <p>Our portfolio of technology products and projects delivering real value.</p>
+                </div>
+            </div>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="projects-grid">
+                        <div class="project-card"><div class="thumb"><i class="fas fa-desktop"></i><div class="overlay"></div></div><div class="body"><span class="tag">CBT</span><h4>Highdee CBT</h4><p>Modern computer-based testing solution for digital examinations, assessment management and result processing.</p><a href="#" class="link">View Project <i class="fas fa-arrow-right"></i></a></div></div>
+                        <div class="project-card"><div class="thumb"><i class="fas fa-file-lines"></i><div class="overlay"></div></div><div class="body"><span class="tag">Result System</span><h4>Highdee Result System</h4><p>Digital result-management solution for student assessment, grading, ranking and result generation.</p><a href="#" class="link">View Project <i class="fas fa-arrow-right"></i></a></div></div>
+                        <div class="project-card"><div class="thumb"><i class="fas fa-building-columns"></i><div class="overlay"></div></div><div class="body"><span class="tag">School Automation</span><h4>School Automation Solutions</h4><p>Digital systems designed to help schools manage administrative and academic processes efficiently.</p><a href="#" class="link">View Project <i class="fas fa-arrow-right"></i></a></div></div>
+                        <div class="project-card"><div class="thumb"><i class="fas fa-folder-open"></i><div class="overlay"></div></div><div class="body"><span class="tag">Digital Records</span><h4>Digital Registration &amp; Records</h4><p>Solutions for managing student and institutional information digitally and securely.</p><a href="#" class="link">View Project <i class="fas fa-arrow-right"></i></a></div></div>
+                        <div class="project-card"><div class="thumb"><i class="fas fa-code"></i><div class="overlay"></div></div><div class="body"><span class="tag">Custom Development</span><h4>Custom Technology Projects</h4><p>Purpose-built systems developed according to specific organizational requirements.</p><a href="#" class="link">View Project <i class="fas fa-arrow-right"></i></a></div></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- ==========================================
+        PAGE: INITIATIVES
+        ========================================== -->
+        <div class="page" id="page-initiatives">
+            <div class="page-hero page-hero-navy">
+                <div class="container">
+                    <h1>Highdee Digital Girls Initiative</h1>
+                    <p>“Building brighter futures through digital skills for girls.”</p>
+                </div>
+            </div>
+            <section class="section-padding">
+                <div class="container">
+                    <div style="max-width:800px;margin:0 auto;">
+                        <p style="font-size:1.1rem;color:var(--gray-600);line-height:1.8;">The Highdee Digital Girls Initiative (HDGI) is focused on helping girls develop digital skills and prepare for opportunities in the technology-driven future. Through digital literacy, web design, technology education, coding, digital creativity, STEM exposure, and empowerment through technology, HDGI is building brighter futures.</p>
+                        <div style="background:var(--navy-50);border-radius:var(--radius-lg);padding:32px;margin:24px 0;text-align:center;border:1px solid var(--navy-200);">
+                            <div style="font-size:3.6rem;font-weight:800;color:var(--navy-700);">2,000+</div>
+                            <div style="font-size:1.1rem;color:var(--gray-600);">students trained in data analysis and web design</div>
+                        </div>
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px;">
+                            <div style="background:var(--navy-100);border-radius:var(--radius-sm);padding:20px 24px;display:flex;align-items:center;gap:14px;"><i class="fas fa-laptop-code" style="color:var(--navy-600);font-size:1.4rem;"></i><span style="font-weight:500;">Digital Literacy</span></div>
+                            <div style="background:var(--navy-100);border-radius:var(--radius-sm);padding:20px 24px;display:flex;align-items:center;gap:14px;"><i class="fas fa-code" style="color:var(--navy-600);font-size:1.4rem;"></i><span style="font-weight:500;">Coding &amp; Web Design</span></div>
+                            <div style="background:var(--navy-100);border-radius:var(--radius-sm);padding:20px 24px;display:flex;align-items:center;gap:14px;"><i class="fas fa-flask" style="color:var(--navy-600);font-size:1.4rem;"></i><span style="font-weight:500;">STEM Exposure</span></div>
+                            <div style="background:var(--navy-100);border-radius:var(--radius-sm);padding:20px 24px;display:flex;align-items:center;gap:14px;"><i class="fas fa-graduation-cap" style="color:var(--navy-600);font-size:1.4rem;"></i><span style="font-weight:500;">Technology Education</span></div>
+                            <div style="background:var(--navy-100);border-radius:var(--radius-sm);padding:20px 24px;display:flex;align-items:center;gap:14px;"><i class="fas fa-paint-brush" style="color:var(--navy-600);font-size:1.4rem;"></i><span style="font-weight:500;">Digital Creativity</span></div>
+                            <div style="background:var(--navy-100);border-radius:var(--radius-sm);padding:20px 24px;display:flex;align-items:center;gap:14px;"><i class="fas fa-rocket" style="color:var(--navy-600);font-size:1.4rem;"></i><span style="font-weight:500;">Empowerment</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- ==========================================
+        PAGE: INSIGHTS
+        ========================================== -->
+        <div class="page" id="page-insights">
+            <div class="page-hero">
+                <div class="container">
+                    <h1>Insights &amp; Articles</h1>
+                    <p>Thoughts on technology, education, and digital transformation.</p>
+                </div>
+            </div>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="insights-grid" style="grid-template-columns:repeat(3,1fr);">
+                        <div class="insight-card"><div class="thumb"><i class="fas fa-graduation-cap"></i></div><div class="body"><span class="cat">Education Technology</span><h4>Digitizing School Administration in Nigeria</h4><p>How technology is helping schools move from paper-based to digital operations.</p></div></div>
+                        <div class="insight-card"><div class="thumb"><i class="fas fa-robot"></i></div><div class="body"><span class="cat">AI &amp; Emerging Tech</span><h4>Practical AI for African Organizations</h4><p>Exploring how artificial intelligence can solve real problems in the African context.</p></div></div>
+                        <div class="insight-card"><div class="thumb"><i class="fas fa-laptop-code"></i></div><div class="body"><span class="cat">Software Development</span><h4>Building Scalable Digital Solutions</h4><p>Best practices for developing technology that grows with your organization.</p></div></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- ==========================================
+        PAGE: CONTACT
+        ========================================== -->
+        <div class="page" id="page-contact">
+            <div class="page-hero">
+                <div class="container">
+                    <h1>Contact Us</h1>
+                    <p>Let's start a conversation about your technology needs.</p>
+                </div>
+            </div>
+            <section class="section-padding">
+                <div class="container">
+                    <div class="contact-grid">
+                        <div class="contact-form">
+                            <form id="contactForm2">
+                                <div class="form-group"><label>Full Name</label><input type="text" placeholder="Your full name" required /></div>
+                                <div class="form-group"><label>Organization</label><input type="text" placeholder="Your organization name" /></div>
+                                <div class="form-group"><label>Email Address</label><input type="email" placeholder="you@example.com" required /></div>
+                                <div class="form-group"><label>Phone Number</label><input type="tel" placeholder="+234 800 000 0000" /></div>
+                                <div class="form-group"><label>Service Needed</label><select><option value="">Select a service</option><option>Software Development</option><option>Web Development</option><option>Education Technology</option><option>Business Automation</option><option>Technology Consulting</option><option>Digital Transformation</option><option>Other</option></select></div>
+                                <div class="form-group"><label>Project Type</label><select><option value="">Select project type</option><option>New Project</option><option>Upgrade Existing System</option><option>Consulting</option><option>Partnership</option><option>Other</option></select></div>
+                                <div class="form-group"><label>Budget Range</label><select><option value="">Select range</option><option>Under ₦1M</option><option>₦1M – ₦5M</option><option>₦5M – ₦10M</option><option>₦10M – ₦20M</option><option>Above ₦20M</option></select></div>
+                                <div class="form-group"><label>Message</label><textarea placeholder="Tell us about your project, goals, or questions..."></textarea></div>
+                                <button type="submit" class="btn btn-primary">Send Inquiry <i class="fas fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                        <div class="contact-info">
+                            <div class="item"><i class="fas fa-envelope"></i><div><div class="label">Email</div><div class="value">highdeetech1@gmail.com</div></div></div>
+                            <div class="item"><i class="fas fa-phone"></i><div><div class="label">Phone</div><div class="value">+234 705 115 0166</div></div></div>
+                            <div class="item"><i class="fas fa-location-dot"></i><div><div class="label">Office</div><div class="value">Nigeria</div></div></div>
+                            <div class="item"><i class="fab fa-whatsapp"></i><div><div class="label">WhatsApp</div><div class="value">+234 705 115 0166</div></div></div>
+                            <div class="contact-social">
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </section>
+    <!-- ===== END MAIN CONTENT ===== -->
+
+
+    <!-- ============================================
+    FOOTER
+    ============================================ -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="C:\Users\PC\Desktop\MY WEBSITE\images\Highdee_logo.jpg" alt="Highdee Technologies Logo" onerror="this.style.display='none';" style="filter:brightness(0) invert(1);height:44px;width:auto;max-width:160px;object-fit:contain;" />
+                    </div>
+                    <p>“Transforming Ideas into Intelligent Solutions”</p>
+                    <p style="margin-top:8px;font-size:0.85rem;">Empowering individuals, schools, and businesses with innovative technology solutions.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#" data-page="home">Home</a></li>
+                        <li><a href="#" data-page="about">About</a></li>
+                        <li><a href="#" data-page="solutions">Solutions</a></li>
+                        <li><a href="#" data-page="services">Services</a></li>
+                        <li><a href="#" data-page="projects">Projects</a></li>
+                        <li><a href="#" data-page="initiatives">Initiatives</a></li>
+                        <li><a href="#" data-page="insights">Insights</a></li>
+                        <li><a href="#" data-page="contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for insights and updates.</p>
+                    <div class="input-group">
+                        <input type="email" placeholder="Your email address" />
+                        <button class="btn btn-primary btn-sm">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2026 Highdee Technologies. All rights reserved.</span>
+                <div class="social">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+    JAVASCRIPT
+    ============================================ -->
+    <script src="main.js"></script>
+
+</body>
+</html>
